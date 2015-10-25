@@ -1,0 +1,24 @@
+.background    { background: url(images/wall.jpg);
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background-image: url(images/lava.gif);     }
+.wall          { background-image: url(images/metalBase.jpg);   }
+
+.actor  { position: absolute;  }
+.player { background-image: url(images/newPlayer.png); }
+.coin { background-image: url(images/smallCoin.png); }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background-image: url(images/playerDeath.png);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
